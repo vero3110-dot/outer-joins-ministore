@@ -1,5 +1,5 @@
 # outer-joins-ministore
-Práctica
+Práctica realizada en sql server
 LEFT, RIGHT y FULL OUTER JOIN: analizando inventario y ventas de una tienda minorista
 
 Propósito del ejercicio
