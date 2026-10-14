@@ -10,10 +10,12 @@
 -- Los productos sin ventas aparecerán con NULL en las columnas de ventas.
 
 -- [Tu consulta aquí]
-select P.producto_id,P.nombre,V.CANTIDAD
+select P.producto_id,V.CANTIDAD
 FROM PRODUCTOS P
 LEFT JOIN VENTAS V
 ON P.producto_id=V.producto_id
+where cantidad is null
+
 --respuesta: producto_id 108 y 109
 
 -- ── CONSULTA 2: RIGHT JOIN ────────────────
@@ -26,6 +28,7 @@ select P.producto_id,P.nombre,V.CANTIDAD
 FROM PRODUCTOS P
 RIGHT JOIN VENTAS V
 ON P.producto_id=V.producto_id
+where p.producto_id is null
 -- si, hay una linea con carga incompleta
 
 -- ── CONSULTA 3: FULL OUTER JOIN ───────────
